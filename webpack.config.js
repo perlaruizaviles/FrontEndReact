@@ -1,9 +1,15 @@
 const path = require('path');
 module.exports = {
+  mode: 'development',
   entry: './components/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js'
+    filename: '[name].js',
+    publicPath: 'dist/'
+  },
+  devServer: {
+    port: 3000,
+    contentBase: __dirname,
   },
   module: {
     rules: [

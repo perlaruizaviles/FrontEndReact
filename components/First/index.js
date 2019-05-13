@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import './First.css';
+
 class Root extends Component {
   render() {
     return (
-      <h1>Hola mundo desde React 1</h1>
+      <div>
+        <h1>Hola mundo desde React 123</h1>
+        <div className="DottedBox">
+          <p className="DottedBox_content">Get started with CSS styling</p>
+        </div>
+      </div>
     )
   }
 }

@@ -1,7 +1,7 @@
 const path = require('path');
 module.exports = {
   mode: 'development',
-  entry: './components/index.js',
+  entry: './components/First/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
@@ -22,6 +22,10 @@ module.exports = {
             presets: ['@babel/preset-react']
           }
         }
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
       }
     ]
   }
